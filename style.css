@@ -1,0 +1,1441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: space-between;
+}
+
+.menu{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3, 46, 49);
+    border-bottom: 1px solid white;
+}
+
+.logo{
+    font-size: 2rem;
+    color: white;
+    user-select: none;
+}
+
+.nevigation a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 4vw;
+}
+
+.nevigation a::after{
+    content: '';
+    position: absolute;
+    margin-left: -70px;
+    bottom: 550px;
+    width: 5%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scalex(0);
+    transition: transform .5s;
+}
+
+.nevigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btnlogin-popup{
+    width: 7rem;
+    height: 3rem;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btnlogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+.search-bar{
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input{
+    background: transparent;
+    font-size: 1.4rem;
+    border-radius: 30px;
+    height: 45px;
+    border: 2px solid white;
+}
+
+::placeholder{
+    color: white;
+    padding-left: 5px;
+}
+
+.search-bar button img{
+    width: 20px;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: black;
+    border: 1px solid white;
+}
+
+.home1{
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.home1 a{
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 60px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.home1 a:hover{
+    background-color: #fff;
+    color: #162938;
+}
+
+.home2{
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-bottom: 2px solid white;
+}
+
+.home2 a{
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 60px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.home2 a:hover{
+    background-color: #fff;
+    color: #162938;
+}
+
+.Home{
+    background-color: rgb(143, 49, 197);
+}
+
+.btn button{
+    width: 130px;
+    height: 45px;
+    background: rgb(11, 175, 11);
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+}
+
+.Home .row{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.Home .content{
+    padding-left: 30px;
+}
+
+.Home .row .book-stand{
+    width: 100%;
+    margin-top: -2rem;
+}
+
+.Home .row .content h3{
+    color: black;
+    font-size: 4.5rem;
+}
+
+.Home .row .content p{
+    color: cornsilk;
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.icons-container .icons img{
+    height: 40px;
+    width: 40px;
+}
+
+.icons-container{
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons-container .icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.heading span{
+    font-size: 3rem;
+    padding: 5rem 3rem;
+}
+
+.Featuerd{
+    background-color: rgb(146, 80, 223);
+}
+
+.book-section1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: rgb(146, 80, 223);
+}
+
+.book1 img{
+    height: 20vw;
+    width: 13vw;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.book1 h2{
+    padding-left: 60px;
+}
+
+.book1 .btn1{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(99, 207, 226);
+}
+
+.book2 img{
+    height: 20vw;
+    width: 13vw;
+    border-radius: 20px;
+}
+
+.book2 h2{
+    padding-left: 60px;
+}
+
+.book2 .btn1{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(99, 207, 226);
+}
+
+.book3 img{
+    height: 20vw;
+    width: 13vw;
+    border-radius: 20px;
+}
+
+.book3 h2{
+    padding-left: 60px;
+}
+
+.book3 .btn1{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(99, 207, 226);
+}
+
+.book4 img{
+    height: 20vw;
+    width: 13vw;
+    border-radius: 20px;
+}
+
+.book4 h2{
+    padding-left: 60px;
+}
+
+.book4 .btn1{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(99, 207, 226);
+}
+
+.book5 img{
+    height: 20vw;
+    width: 13vw;
+    border-radius: 20px;
+}
+
+.book5 h2{
+    padding-left: 60px;
+}
+
+.book5 .btn1{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(99, 207, 226);
+}
+
+
+.book-section2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: rgb(146, 80, 233);
+}
+
+.book6 img{
+    height: 20vw;
+    width: 13vw;
+    border-radius: 20px;
+}
+
+.book6 h2{
+    padding-left: 60px;
+}
+
+.book6 .btn1{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(99, 207, 226);
+}
+
+.book7 img{
+    height: 20vw;
+    width: 13vw;
+    border-radius: 20px;
+}
+
+.book7 h2{
+    padding-left: 60px;
+}
+
+.book7 .btn1{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(99, 207, 226);
+}
+
+.book8 img{
+    height: 20vw;
+    width: 13vw;
+    border-radius: 20px;
+}
+
+.book8 h2{
+    padding-left: 60px;
+}
+
+.book8 .btn1{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(99, 207, 226);
+}
+
+.book9 img{
+    height: 20vw;
+    width: 13vw;
+    border-radius: 20px;
+}
+
+.book9 h2{
+    padding-left: 60px;
+}
+
+.book9 .btn1{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(99, 207, 226);
+}
+
+.book10 img{
+    height: 20vw;
+    width: 13vw;
+    border-radius: 20px;
+}
+
+.book10 h2{
+    padding-left: 60px;
+}
+
+.book10 .btn1{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(99, 207, 226);
+}
+
+.newsletter{
+    background: url(all\ images/1337463.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.newsletter form{
+    padding: 100px 50px;
+}
+
+.newsletter form h3{
+    font-size: 2.2rem;
+    color: #fff;
+    padding-bottom: .6rem;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.newsletter form .btn3{
+    margin-left: 40px;
+    margin-right: 40px;;
+    width: 140px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: white;
+}
+
+.newsletter form .box{
+    height: 40px;
+    width: 300px;
+    font-size: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.deal{
+    background-color: rgb(131, 7, 214);
+}
+
+.deal .row1{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    color: white;
+}
+
+.deal .content1{
+    padding-left: 30px;
+}
+
+.deal .row1 .image{
+    width: 100%;
+    margin-top: -2rem;
+}
+
+.deal .row1 .content1 h3{
+    color: white;
+    font-size: 4.5rem;
+}
+
+.deal .row1 .content1 p{
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.deal .row1 .content1 h1{
+    font-size: 2rem;
+}
+
+.deal .row1 .content1 .btn4 button{
+    margin-left: 30px;
+    margin-right: 40px;;
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    background-color: rgb(7, 199, 7);
+}
+
+.form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid;
+    background-color: rgba(135, 75, 190, 0.667);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.form_container h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: black;
+}
+
+.input_box input{
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 40px;
+    transition: all 0.2s ease;
+    border-radius: 10px;
+}
+
+.input_box label{
+    font-size: 20px;
+    color: black;
+}
+.input_box input:focus{
+    border-color: #7d2ae8;
+}
+
+.form_container .button{
+    background: #bb15ee;
+    margin-top: 30px;
+    width: 300px;
+    padding: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.burger{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 5px;
+    transition: .3s;
+}
+
+.popup{
+    background-color: blueviolet;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup input{
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px;
+    color: black;
+}
+
+
+.login1{
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(221, 82, 36);
+    font-size: 17px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.login1:hover{
+    background-color: rgb(44, 214, 44);
+    color: black;
+}
+
+.open-slide{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.4s, top 0.4s;
+}
+
+.popup p{
+    font-size: 18px;
+    padding: 17px;
+    color: white;
+}
+
+.popup p a{
+    color: black;
+}
+
+.popup img{
+    height: 20px;
+    padding-left: 310px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1241px)
+{
+    
+    .menu{
+        flex-direction: column;
+        height: 70px;
+
+    }
+
+    .search-bar input{
+        width: 180px;
+        height: 30px;
+    }
+    
+    .nevigation a{
+        font-size: 20px;
+    }
+
+    .menu h2{
+        font-size: 25px;
+        position: absolute;
+        left: 5%;
+        top: 15px;
+    }
+    
+    .burger{
+        display: block;
+    }
+
+    .v-class{
+        opacity: 0;
+    }
+
+    
+
+    .home1{
+        height: 6vw;
+        padding: 2vw 2vw;
+        
+    }
+    
+    .home1 a{
+        width: 15vw;
+        height: 4.5vw;
+        font-size: 1.4vw;
+    }
+    
+    .home2{
+        height: 6vw;
+        padding: 2vw 2vw;
+        
+    }
+
+    .home2 a{
+        width: 15vw;
+        height: 4.5vw;
+        font-size: 1.4vw;
+    }
+
+    .Home{
+        height: 27.5vw;
+    }
+
+    .Home .row .book-stand img{
+        height: 25vw;
+        width: 36vw;
+        transition: .3s;
+    }
+
+    .Home .row .content h3{
+        font-size: 5vw;
+        transition: .3s;
+    }
+    
+    .Home .row .content p{
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+
+    .Home .row .content .btn button{
+        height: 4vw ;
+        width: 12vw;
+        transition: .3s;
+        font-size: 1.8vw;
+    }
+
+    .Featuerd .heading span{
+        font-size: 5.5vw;
+        transition: .3s;
+    }
+
+    .book1 .btn1{
+        height: 4.5vw;
+        width: 10vw;
+        margin-left: 10px;
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+    
+    .book1 h2{
+        font-size: 2vw;
+        padding-left: 20px;
+        transition: .3s;
+    }
+
+    .book2 .btn1{
+        height: 4.5vw;
+        width: 10vw;
+        margin-left: 10px;
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+    
+    .book2 h2{
+        font-size: 2vw;
+        padding-left: 20px;
+        transition: .3s;
+    }
+
+    .book3 .btn1{
+        height: 4.5vw;
+        width: 10vw;
+        margin-left: 10px;
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+    
+    .book3 h2{
+        font-size: 2vw;
+        padding-left: 20px;
+        transition: .3s;
+    }
+
+    .book4 .btn1{
+        height: 4.5vw;
+        width: 10vw;
+        margin-left: 10px;
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+    
+    .book4 h2{
+        font-size: 2vw;
+        padding-left: 20px;
+        transition: .3s;
+    }
+
+    .book5 .btn1{
+        height: 4.5vw;
+        width: 10vw;
+        margin-left: 10px;
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+    
+    .book5 h2{
+        font-size: 2vw;
+        padding-left: 20px;
+        transition: .3s;
+    }
+
+    .book6 .btn1{
+        height: 4.5vw;
+        width: 10vw;
+        margin-left: 10px;
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+    
+    .book6 h2{
+        font-size: 2vw;
+        padding-left: 20px;
+        transition: .3s;
+    }
+
+    .book7 .btn1{
+        height: 4.5vw;
+        width: 10vw;
+        margin-left: 10px;
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+    
+    .book7 h2{
+        font-size: 2vw;
+        padding-left: 20px;
+        transition: .3s;
+    }
+
+    .book8 .btn1{
+        height: 4.5vw;
+        width: 10vw;
+        margin-left: 10px;
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+    
+    .book8 h2{
+        font-size: 2vw;
+        padding-left: 20px;
+        transition: .3s;
+    }
+
+    .book9 .btn1{
+        height: 4.5vw;
+        width: 10vw;
+        margin-left: 10px;
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+    
+    .book9 h2{
+        font-size: 2vw;
+        padding-left: 20px;
+        transition: .3s;
+    }
+
+    .book10 .btn1{
+        height: 4.5vw;
+        width: 10vw;
+        margin-left: 10px;
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+    
+    .book10 h2{
+        font-size: 2vw;
+        padding-left: 20px;
+        transition: .3s;
+    }
+
+    .newsletter{
+        height: 200px;
+    }
+
+    .newsletter form h3{
+        display: flex;
+        font-size: 25px;
+        margin-left: -10px;
+        margin-top: -50px;
+        transition: .3s;
+        font-weight: 1000;
+    }
+    
+    .newsletter form .box{
+        width: 170px;
+        height: 30px;
+        padding-top: 10px;
+        transition: .3s;
+    }
+    
+    .newsletter form .btn3{
+        height: 40px;
+        width: 100px;
+        font-size: 17px;
+        transition: .3s;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+    .deal .row1 .content1 h1{
+        font-size: 3.5vw;
+        transition: .3s;
+    }
+
+    .deal .row1 .content1 h3{
+        font-size: 5.8vw;
+        transition: .3s;
+    }
+
+    .deal .row1 .content1 p{
+        font-size: 2vw;
+        transition: .3s;
+    }
+
+    .deal .row1 .content1 .btn4 button{
+        height: 3.3vw;
+        width: 10vw;
+        font-size: 2vw;
+        border-radius: 6px;
+        margin-left: -5px;
+        transition: .3s;
+    }
+
+     .deal .row1 .image img{
+        height: 25vw;
+        width: 36vw;
+        transition: .3s;
+     }
+
+     .icons-container .icons img{
+        height: 4vw;
+        width: 4vw;
+     }
+
+     .icons-container .icons h3{
+        font-size: 1.8vw;
+     }
+
+     .icons-container .icons p{
+        font-size: 1.5vw;
+     }
+
+}
+
+/*
+
+@media  screen and (max-width:605px)
+{ 
+    .menu{
+        flex-direction: column;
+        height: 70px;
+
+    }
+
+    .search-bar input{
+        width: 180px;
+        height: 30px;
+    }
+    
+    .nevigation a{
+        font-size: 20px;
+    }
+
+    .menu h2{
+        font-size: 25px;
+        position: absolute;
+        left: 5%;
+        top: 15px;
+    }
+    
+    .burger{
+        display: block;
+    }
+
+    .v-class{
+        opacity: 0;
+    }
+
+    
+
+    .home1{
+        height: 6vw;
+        padding: 2vw 2vw;
+        
+    }
+    
+    .home1 a{
+        width: 15vw;
+        height: 4.5vw;
+        font-size: 1.4vw;
+    }
+    
+    .home2{
+        height: 6vw;
+        padding: 2vw 2vw;
+        
+    }
+
+    .home2 a{
+        width: 15vw;
+        height: 4.5vw;
+        font-size: 1.4vw;
+    }
+
+    .Home{
+        height: 27.5vw;
+    }
+
+    .Home .row .book-stand img{
+        height: 25vw;
+        width: 36vw;
+        transition: .3s;
+    }
+
+    .Home .row .content h3{
+        font-size: 5vw;
+        transition: .3s;
+    }
+    
+    .Home .row .content p{
+        font-size: 1.5vw;
+        transition: .3s;
+    }
+
+    .Home .row .content .btn button{
+        height: 4vw ;
+        width: 12vw;
+        transition: .3s;
+        font-size: 1.8vw;
+    }
+
+
+  .book-section1{
+    flex-direction: column;
+  } 
+  
+  .book-section2{
+    flex-direction: column;
+  }
+
+  .Featuerd h1{
+    padding-top: 20px;
+  }
+
+  .Featuerd .heading span{
+    font-size: 30px;
+    transition: .3s;
+}
+
+
+.book1 img{
+    height: 240px;
+    width: 170px;
+}
+
+.book2 img{
+    height: 240px;
+    width: 170px;
+}
+
+.book3 img{
+    height: 240px;
+    width: 170px;
+}
+
+.book4 img{
+    height: 240px;
+    width: 170px;
+}
+
+.book5 img{
+    height: 240px;
+    width: 170px;
+}
+
+.book6 img{
+    height: 240px;
+    width: 170px;
+}
+
+.book7 img{
+    height: 240px;
+    width: 170px;
+}
+
+.book8 img{
+    height: 240px;
+    width: 170px;
+}
+
+.book9 img{
+    height: 240px;
+    width: 170px;
+}
+
+.book10 img{
+    height: 240px;
+    width: 170px;
+}
+.book1 .btn1{
+    height: 35px;
+    width: 80px;
+    margin-left: 45px;
+    font-size: 14px;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.book1 h2{
+    font-size: 20px;
+    padding-left: 55px;
+    transition: .3s;
+}
+
+.book2 .btn1{
+    height: 35px;
+    width: 80px;
+    margin-left: 45px;
+    font-size: 14px;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.book2 h2{
+    font-size: 20px;
+    padding-left: 55px;
+    transition: .3s;
+}
+
+.book3 .btn1{
+    height: 35px;
+    width: 80px;
+    margin-left: 45px;
+    font-size: 14px;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.book3 h2{
+    font-size: 20px;
+    padding-left: 55px;
+    transition: .3s;
+}
+
+.book4 .btn1{
+    height: 35px;
+    width: 80px;
+    margin-left: 45px;
+    font-size: 14px;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.book4 h2{
+    font-size: 20px;
+    padding-left: 55px;
+    transition: .3s;
+}
+
+.book5 .btn1{
+    height: 35px;
+    width: 80px;
+    margin-left: 45px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.book5 h2{
+    font-size: 20px;
+    padding-left: 55px;
+    transition: .3s;
+}
+
+.book6 .btn1{
+    height: 35px;
+    width: 80px;
+    margin-left: 45px;
+    font-size: 14px;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.book6 h2{
+    font-size: 20px;
+    padding-left: 55px;
+    transition: .3s;
+}
+
+.book7 .btn1{
+    height: 35px;
+    width: 80px;
+    margin-left: 45px;
+    font-size: 14px;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.book7 h2{
+    font-size: 20px;
+    padding-left: 55px;
+    transition: .3s;
+}
+
+.book8 .btn1{
+    height: 35px;
+    width: 80px;
+    margin-left: 45px;
+    font-size: 14px;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.book8 h2{
+    font-size: 20px;
+    padding-left: 55px;
+    transition: .3s;
+}
+
+.book9 .btn1{
+    height: 35px;
+    width: 80px;
+    margin-left: 45px;
+    font-size: 14px;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.book9 h2{
+    font-size: 20px;
+    padding-left: 55px;
+    transition: .3s;
+}
+
+.book10 .btn1{
+    height: 35px;
+    width: 80px;
+    margin-left: 45px;
+    font-size: 14px;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.book10 h2{
+    font-size: 20px;
+    padding-left: 55px;
+    transition: .3s;
+}
+
+.newsletter{
+    height: 200px;
+}
+
+.newsletter form h3{
+    display: flex;
+    font-size: 25px;
+    margin-left: -10px;
+    margin-top: -50px;
+    transition: .3s;
+    font-weight: 1000;
+}
+
+.newsletter form .box{
+    width: 170px;
+    height: 30px;
+    padding-top: 10px;
+    transition: .3s;
+}
+
+.newsletter form .btn3{
+    height: 40px;
+    width: 100px;
+    font-size: 17px;
+    transition: .3s;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.deal .row1 .content1 h1{
+    font-size: 3.5vw;
+    transition: .3s;
+}
+
+.deal .row1 .content1 h3{
+    font-size: 5.8vw;
+    transition: .3s;
+}
+
+.deal .row1 .content1 p{
+    font-size: 2vw;
+    transition: .3s;
+}
+
+.deal .row1 .content1 .btn4 button{
+    height: 3.3vw;
+    width: 10vw;
+    font-size: 2vw;
+    border-radius: 6px;
+    margin-left: -5px;
+    transition: .3s;
+}
+
+ .deal .row1 .image img{
+    height: 25vw;
+    width: 36vw;
+    transition: .3s;
+ }
+
+ .icons-container .icons img{
+    height: 4vw;
+    width: 4vw;
+ }
+
+ .icons-container .icons h3{
+    font-size: 1.8vw;
+ }
+
+ .icons-container .icons p{
+    font-size: 1.5vw;
+ }
+}
+*/
